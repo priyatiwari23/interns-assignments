@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-// Function to evaluate arithmetic expression
+
 const evaluateExpression = (expression) => {
     try {
         return eval(expression);
@@ -10,7 +10,7 @@ const evaluateExpression = (expression) => {
     }
 };
 
-// Function to solve arithmetic expressions in a file
+
 const solveArithmeticExpressions = (inputFilePath, outputFilePath) => {
     fs.readFile(inputFilePath, 'utf8', (err, data) => {
         if (err) {
@@ -36,7 +36,7 @@ const solveArithmeticExpressions = (inputFilePath, outputFilePath) => {
     });
 };
 
-// Example usage
+
 const inputFilePath = 'input.txt';
 const outputFilePath = 'output.txt';
 solveArithmeticExpressions(inputFilePath, outputFilePath);
